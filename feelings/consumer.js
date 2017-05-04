@@ -5,6 +5,6 @@ var reader = require('./reader');
 bus.listen(config.amqp.canalIn, function (tweet) {
   var sentiment = reader(tweet.text);
   tweet.sentiment = sentiment;
-  bus.send(config.amqp.canalOut, tweet);
   console.log(tweet);
+  bus.send(config.amqp.canalOut, tweet);
 });

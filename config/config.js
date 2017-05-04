@@ -1,9 +1,9 @@
 var env = require('common-env/withLogger')(console);
 module.exports = env.getOrElseAll({
     amqp: {
-        ip:'amqp://sacuqjih:omOG4lRsjCl-5Rn2-slRUjuHYmSGzxRf@lark.rmq.cloudamqp.com/sacuqjih',
+        ip:'amqp://192.168.99.100',
         canalIn: 'tweet',
-        canalOut: 'tweet.flow'
+        canalOut: 'sentiment'
     },
     twitter : {
         consumerKey: 'XTPatwzTzfJj5QudijmGzZmTQ',
