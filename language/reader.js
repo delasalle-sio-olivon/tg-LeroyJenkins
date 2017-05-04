@@ -1,4 +1,4 @@
-var franc = require('franc');
+var franc = require('franc-min');
 
 module.exports = function (text){
 
