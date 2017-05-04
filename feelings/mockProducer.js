@@ -1,7 +1,7 @@
 var bus = require('servicebus').bus({ url: "amqp://192.168.99.100" });
 var tweet = {
   id: 629509643622985700,
-  text: "RT Contenu du tweet",
+  text: "Fuck you all bitch!",
   created_at: "Fri Aug 07 04:29:29 +0000 2015",
   source: "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
   lang: "fr",

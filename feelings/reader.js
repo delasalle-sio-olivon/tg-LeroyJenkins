@@ -1,7 +1,8 @@
 var sentiment = require('sentiment');
 
-module.export=function (text){
+module.exports = function (text){
 
-var result = sentiment(text);
-return result;
+    var result = sentiment(text);
+    return result;
+
 }
