@@ -1,9 +1,10 @@
-var bus = require('servicebus').bus({ url: "amqp://192.168.99.100" });
+var config = require('../config/config');
+var bus = require('servicebus').bus({ url: config.amqp.ip });
 var reader = require('./reader');
 
-bus.listen('tweeter', function (tweet) {
+bus.listen(config.amqp.canalIn, function (tweet) {
   var sentiment = reader(tweet.text);
-  console.log(sentiment);
   tweet.sentiment = sentiment;
-  bus.send('tweet.flow', tweet);
+  bus.send(config.amqp.canalOut, tweet);
+  console.log(tweet);
 });

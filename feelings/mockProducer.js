@@ -1,4 +1,5 @@
-var bus = require('servicebus').bus({ url: "amqp://192.168.99.100" });
+var config = require('../config/config');
+var bus = require('servicebus').bus({ url: config.amqp.ip });
 var tweet = {
   id: 629509643622985700,
   text: "Fuck you all bitch!",
@@ -36,5 +37,5 @@ var tweet = {
 };
 
 setInterval(function () {
-    bus.send('tweeter', tweet);
+    bus.send(config.amqp.canalIn, tweet);
 }, 1000);
