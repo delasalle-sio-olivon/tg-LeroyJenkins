@@ -9,7 +9,7 @@ strucutre d'un tweet :
   created_at: "Fri Aug 07 04:29:29 +0000 2015",
   source: "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
   lang: "fr",
-  entities: [
+  entities: {
     hashtags: [{ 
         text: "data" 
     }],
@@ -20,7 +20,7 @@ strucutre d'un tweet :
       type: "photo", 
       media_url: "http://pic.com/9J0WwAAEoU0.jpg" 
     }]
-  ],
+  },
   user: {
     screen_name: "twitter_user",
     name: "Full account name",
