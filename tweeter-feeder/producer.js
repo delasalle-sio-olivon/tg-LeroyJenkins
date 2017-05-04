@@ -1,6 +1,5 @@
-var TwitterStream = require('twitter-stream-api'), fs = require('fs');
+var TwitterStream = require('twitter-stream-api');
 const config = require('../config/config');
-var amqp = require('amqplib/callback_api');
 var bus = require('servicebus').bus({ url: config.amqp.ip });
 
 var keys = {
@@ -11,12 +10,10 @@ var keys = {
 };
 
 var Twitter = new TwitterStream(keys, true);
+
 Twitter.stream('statuses/filter', {
     track: config.track
-    
 });
-
-//Twitter.pipe(fs.createWriteStream('tweets.json'));
 
 Twitter.on('connection success', function (uri) {
     console.log('connection success', uri);
