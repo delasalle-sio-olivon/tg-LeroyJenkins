@@ -4,6 +4,7 @@
   "description": "login cloud mqp: g.boutroux@gmail.com   mdp:leroyjenkins",
   "main": "index.js",
   "dependencies": {
+    "sentiment": "^4.0.0",
     "twitter-stream-api": "^0.5.1"
   },
   "devDependencies": {},
