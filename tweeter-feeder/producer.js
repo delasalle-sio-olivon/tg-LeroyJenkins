@@ -24,5 +24,5 @@ Twitter.on('data', function(tweet) {
 }); 
 
 function sendTweet(tweet) {
-    bus.send(config.amqp.canalIn, tweet);
+    bus.send(config.amqp.canalTwitter, tweet);
 }

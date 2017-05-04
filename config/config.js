@@ -2,8 +2,9 @@ var env = require('common-env/withLogger')(console);
 module.exports = env.getOrElseAll({
     amqp: {
         ip:'',
-        canalIn: '',
-        canalOut: ''
+        canalTwitter: '',
+        canalLang: '',
+        canalSentiment: ''
     },
     twitter : {
         consumerKey: '',

@@ -6,8 +6,10 @@
   "dependencies": {
     "amqplib": "^0.5.1",
     "common-env": "^6.1.0",
+    "franc-min": "^3.1.0",
     "lodash": "^4.17.4",
     "sentiment": "^4.0.0",
+    "sentiment-french": "^1.0.2",
     "servicebus": "^2.0.10",
     "socket.io": "^1.7.3",
     "twitter-stream-api": "^0.5.1",
