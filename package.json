@@ -4,12 +4,13 @@
   "description": "login cloud mqp: g.boutroux@gmail.com   mdp:leroyjenkins",
   "main": "index.js",
   "dependencies": {
-    "sentiment": "^4.0.0",
-    "twitter-stream-api": "^0.5.1",
+    "amqplib": "^0.5.1",
     "common-env": "^6.1.0",
     "lodash": "^4.17.4",
+    "sentiment": "^4.0.0",
     "servicebus": "^2.0.10",
     "socket.io": "^1.7.3",
+    "twitter-stream-api": "^0.5.1",
     "winston": "^2.3.1"
   },
   "devDependencies": {},
