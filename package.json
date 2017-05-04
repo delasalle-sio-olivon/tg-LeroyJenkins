@@ -1,0 +1,23 @@
+{
+  "name": "tg-leroyjenkins",
+  "version": "1.0.0",
+  "description": "login cloud mqp: g.boutroux@gmail.com   mdp:leroyjenkins",
+  "main": "index.js",
+  "dependencies": {
+    "twitter-stream-api": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delasalle-sio-olivon/tg-LeroyJenkins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delasalle-sio-olivon/tg-LeroyJenkins/issues"
+  },
+  "homepage": "https://github.com/delasalle-sio-olivon/tg-LeroyJenkins#readme"
+}
